@@ -1,7 +1,6 @@
 node {
-	git 'https://github.com/bob-crutchley/python-http-server'
-	sh "sudo docker-compose down --remove-orphans" 
-	sh "sudo docker-compose build" 
-	sh "sudo docker-compose up -d" 
+	git 'https://github.com/Damianqwe/python-http-server'
+	sudo cp -r app.py /public /home/python
+ 
 }
 
