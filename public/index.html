@@ -12,7 +12,7 @@
 	</div>
   	<script>
 		$.getJSON("info.json", function (info) {
-			let host_name = `<p>whoami: ${info.whoami}</p>`
+			let host_name = `<p>hostname: ${info.host_name}</p>`
 			let version = `<p>version: ${info.version}</p>`
 			$('#info').html(host_name + version)
 		});
